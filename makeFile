@@ -1,0 +1,6 @@
+all:
+	$(CROSS_COMPILE)gcc -c main.c main.o
+	$(CROSS_COMPILE)gcc main.o -o main
+
+clean:
+	rm -f *.o
